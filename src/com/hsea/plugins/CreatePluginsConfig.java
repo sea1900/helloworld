@@ -1,12 +1,12 @@
-package com.ces.enigma.pluginsConfig;
+package com.hsea.plugins;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
-* @author hc
-*/
+ * @author hc
+ */
 public class CreatePluginsConfig {
 	private String path;
 
@@ -44,8 +44,8 @@ public class CreatePluginsConfig {
 				}
 				String[] filenames = fileName.split("_");
 				String filename1 = filenames[0];
-				String filename2 = filenames[1].substring(0, filenames[1]
-						.lastIndexOf("."));
+				String filename2 = filenames[1].substring(0,
+						filenames[1].lastIndexOf("."));
 				result = filename1 + "," + filename2 + ",file:/" + path + "\\"
 						+ fileName + ",4,false";
 				System.out.println(result);
